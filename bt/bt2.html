@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    
+</body>
+<script>
+            let a = +prompt("Nhập số nguyên a:");
+            let b = +prompt("Nhập số nguyên b:");
+
+            // Kiểm tra xem a có nhỏ hơn b không
+            if (a > b) {
+                // Nếu a > b, hoán đổi giá trị của a và b
+                let temp = a;
+                a = b;
+                b = temp;
+            }
+
+            let sum = 0;
+
+            // Tính tổng các số nguyên trong khoảng giữa a và b
+            for (let i = a + 1; i < b; i++) {
+                sum += i;
+            }
+            // In kết quả ra màn hình console
+            console.log("Tổng các số nguyên trong khoảng giữa", a, "và", b, "là:", sum);
+</script>
+</html>
